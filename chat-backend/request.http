@@ -1,0 +1,54 @@
+POST http://localhost:8000/api/conversation
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWIyMjI1MjEyNWRkNDgxZmE1MmI4YiIsImVtYWlsIjoibmFtbmFtQGdtYWlsLmNvbSIsImlhdCI6MTY1NDU5MzY1MiwiZXhwIjoxNjU0NjgwMDUyfQ.rO8NJXPtAy6PfPZ1EcLxWC5UVWWSBYgXXHhW5NH6akE
+Content-Type: application/json
+
+{
+   
+    "receiverId": "629d6eac86b26df947468dcb"
+}
+
+###
+
+GET http://localhost:8000/api/conversation/629b22252125dd481fa52b8b
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWIyMjI1MjEyNWRkNDgxZmE1MmI4YiIsImVtYWlsIjoibmFtbmFtQGdtYWlsLmNvbSIsImlhdCI6MTY1NDkxMDg0NCwiZXhwIjoxNjU0OTk3MjQ0fQ.JERRXGvuaigDFvhCLldMYBmPDCjXa9MvTUMn-SbFfKQ
+
+###
+POST http://localhost:8000/api/message
+Content-Type: application/json
+
+{
+    "conversationId": "fjenwkfmwef",
+    "sender": "fewgfwerg",
+    "text": "nerwjgvejr"
+}
+
+###
+GET http://localhost:8000/api/user
+
+###
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "email": "namnam@gmail.com",
+    "password": "namnam"
+}
+
+###
+Get http://localhost:8000/api/message/62a01c39d998d5f1dd41a02b
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWIyMjI1MjEyNWRkNDgxZmE1MmI4YiIsImVtYWlsIjoibmFtbmFtQGdtYWlsLmNvbSIsImlhdCI6MTY1NDg0ODkwMSwiZXhwIjoxNjU0OTM1MzAxfQ.KsZEnvSiUUlfvezWJkVNcu0PYJf7e5n-f-ejjIQZRS8
+
+###
+GET http://localhost:8000/api/user/62a01c39d998d5f1dd41a02b
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWIyMjI1MjEyNWRkNDgxZmE1MmI4YiIsImVtYWlsIjoibmFtbmFtQGdtYWlsLmNvbSIsImlhdCI6MTY1NDU1NzcxOCwiZXhwIjoxNjU0NjQ0MTE4fQ.fb6nGB32LRIDYU_lZVtkl-ErSykVmFAF30NtpxEMb2I
+
+###
+PUT http://localhost:8000/api/message/read/62a3efdb7d1b930e7c6a0eab
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWQ2ZWFjODZiMjZkZjk0NzQ2OGRjYiIsImVtYWlsIjoibWFuaG1hbmhAZ21haWwuY29tIiwiaWF0IjoxNjU1MDIzMDU1LCJleHAiOjE2NTUxMDk0NTV9.Pmd6C8XgWePJdW3WdjJuU4aS3o3Q3JJ6YE8OPD1NIr4
+
+###
+GET http://localhost:8000/api/message/unread/62a3efdb7d1b930e7c6a0eab
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWIyMjI1MjEyNWRkNDgxZmE1MmI4YiIsImVtYWlsIjoibmFtbmFtQGdtYWlsLmNvbSIsImlhdCI6MTY1NDg0ODkwMSwiZXhwIjoxNjU0OTM1MzAxfQ.KsZEnvSiUUlfvezWJkVNcu0PYJf7e5n-f-ejjIQZRS8
+
